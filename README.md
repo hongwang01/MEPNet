@@ -72,7 +72,7 @@ CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "pr
 CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "pretrained_model/V320/MEPNet_latest.pt" --save_path "save_results/" --test_proj 320 
 ```
 
-Reconstruction results can be downloaded from [[NetDisk]]()(pwd:mep)
+Reconstruction results can be downloaded from [[NetDisk]](https://pan.baidu.com/s/1-E1Cz9gaTc320_0_t98Qlg?pwd=mep1)(pwd:mep1)
 
 ## Experiments
 
@@ -100,8 +100,6 @@ If helpful for your research, please cite our work:
 ## License
 The resources of this project are for academic use only, not for any commercial purposes. Please contact us if necessary. 
 
-## To Do List
-The NetDisk link for downloading reconstruction results.
 
 ## Contact
 If you have any questions, please feel free to contact Hong Wang (Email: hongwang9209@hotmail.com)
