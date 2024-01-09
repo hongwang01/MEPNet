@@ -31,7 +31,7 @@ from utils.dataset import MARSPTrainDataset
 import scipy.io as sio
 from network import MEPNet
 
-
+os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_path", type=str, default="./mar_sp_data/deep_lesion/", help='txt path to training spa-data')
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=0)
@@ -50,11 +50,8 @@ parser.add_argument('--eta2', type=float, default=5, help='initialization for st
 parser.add_argument('--alpha', type=float, default=0.5, help='initialization for weight factor')
 parser.add_argument('--gamma', type=float, default=1e-1, help='hyper-parameter for balancing different loss items')
 parser.add_argument('--train_proj', type=int, default=160, help='the number of projection views')  # 320, 160, 80
-parser.add_argument("--use_gpu", type=bool, default=True, help='use GPU or not')
-parser.add_argument("--gpu_id", type=str, default="0", help='GPU id')
 opt = parser.parse_args()
-if opt.use_gpu:
-    os.environ["CUDA_VISIBLE_DEVICES"] = opt.gpu_id
+
 
 para_ini = initialization()
 fp, fbp, op_norm = build_gemotry(para_ini)
