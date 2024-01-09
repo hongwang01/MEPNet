@@ -40,17 +40,17 @@ data/test/testmask.npy
 ## Training
 1. x8 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V80" --model_dir "models_V80" --train_proj 80 
+CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V80" --model_dir "pretrained_model/V80" --train_proj 80 
 ```
 
 2. x4 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V160" --model_dir "models_V160" --train_proj 160 
+CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V160" --model_dir "pretrained_model/V160" --train_proj 160 
 ```
 
 3. x2 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V320" --model_dir "models_V320" --train_proj 320 
+CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V320" --model_dir "pretrained_model/V320" --train_proj 320 
 ```
 
 ## Pretrained_Models
@@ -59,17 +59,17 @@ Please download from [[Google Drive]]()
 ## Testing
 1. x8 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "models_V80/MEPNet_latest.pt" --save_path "save_results/" --test_proj 80 
+CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "pretrained_model/V80/MEPNet_latest.pt" --save_path "save_results/" --test_proj 80 
 ```
 
 2. x4 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "models_V160/MEPNet_latest.pt" --save_path "save_results/" --test_proj 160 
+CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "pretrained_model/V160/MEPNet_latest.pt" --save_path "save_results/" --test_proj 160 
 ```
 
 3. x2 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "models_V320/MEPNet_latest.pt" --save_path "save_results/" --test_proj 320 
+CUDA_VISIBLE_DEVICES=0  python test.py  --data_path "data/test/" --model_dir "pretrained_model/V320/MEPNet_latest.pt" --save_path "save_results/" --test_proj 320 
 ```
 
 Reconstruction results can be downloaded from [[NetDisk]]()(pwd:mep)
@@ -99,6 +99,9 @@ If helpful for your research, please cite our work:
 
 ## License
 The resources of this project are for academic use only, not for any commercial purposes. Please contact us if necessary. 
+
+## To Do List
+The NetDisk link for downloading reconstruction results.
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang9209@hotmail.com)
