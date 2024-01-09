@@ -40,21 +40,21 @@ data/test/testmask.npy
 ## Training
 1. x8 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V80" --model_dir "pretrained_model/V80" --train_proj 80 
+CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs/V80" --model_dir "pretrained_model/V80" --train_proj 80 
 ```
 
 2. x4 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V160" --model_dir "pretrained_model/V160" --train_proj 160 
+CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs/V160" --model_dir "pretrained_model/V160" --train_proj 160 
 ```
 
 3. x2 downsampling
 ```
-CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs_V320" --model_dir "pretrained_model/V320" --train_proj 320 
+CUDA_VISIBLE_DEVICES=0  python train.py  --data_path "data/train/" --log_dir "logs/V320" --model_dir "pretrained_model/V320" --train_proj 320 
 ```
 
 ## Pretrained_Models
-Please download from [[Google Drive]]()
+Please download from [[Google Drive]](https://drive.google.com/drive/folders/1YJi8Oh8ahT1CGGjg-cyLBIzOGyFyicuT?usp=drive_link) and put them into the folder "MEPNet/pretained_model"
 
 ## Testing
 1. x8 downsampling
@@ -104,4 +104,4 @@ The resources of this project are for academic use only, not for any commercial 
 The NetDisk link for downloading reconstruction results.
 
 ## Contact
-If you have any question, please feel free to concat Hong Wang (Email: hongwang9209@hotmail.com)
+If you have any questions, please feel free to contact Hong Wang (Email: hongwang9209@hotmail.com)
